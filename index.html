@@ -158,6 +158,7 @@
           <li>Designing an EV charging system with voltage/current control and power factor correction.</li>
           <li>Implemented closed-loop control of a boost converter.</li>
           <li>Developing an algorithm to switch between Constant Current (CC) and Constant Voltage (CV) modes based on battery State of Charge (SoC).</li>
+          <li>Working on Active and Passive Cell Balancing Methods for Protection of the Battery System.</li>
         </ul>
       </article>
 
@@ -180,7 +181,41 @@
           <li>Currently testing partial discharge conditions.</li>
         </ul>
       </article>
+
+      <article class="card">
+  <div class="card-head">
+    <h3>Island Microgrid Ecosystem</h3>
+    <div class="badges">
+      <span class="badge">MATLAB/Simulink</span>
+      <span class="badge">Grid + Island Mode</span>
+      <span class="badge">SVPWM</span>
+      <span class="badge">PLL</span>
+    </div>
+  </div>
+
+  <ul>
+    <li>
+      Built a hybrid microgrid simulation integrating <b>24 kW Solar PV</b>, <b>10–20 kW wind</b>, and a
+      <b>200 V, 100 Ah battery</b> feeding a <b>600 V DC bus</b> with a <b>15 Ω DC load</b>.
+    </li>
+    <li>
+      Implemented a <b>35 kVA, 415 V (L-L), 50 Hz</b> inverter stage using <b>SVPWM</b> and designed a
+      <b>single L-filter</b> (≈ <b>407 µH</b>) based on rated current and switching ripple constraints.
+    </li>
+    <li>
+      Developed control logic for <b>grid-connected</b> and <b>islanded</b> operation:
+      <b>voltage synchronization (PLL)</b> for grid mode and <b>voltage + current synchronization/limiting</b>
+      for island mode to maintain stable operation under load changes.
+    </li>
+    <li>
+      Observed and documented key challenges such as <b>DC bus overshoot</b> and <b>low grid current</b>;
+      tuning multiple PID loops was constrained due to the model being <b>computationally memory-intensive</b>.
+    </li>
+  </ul>
+</article>
+
     </section>
+      
 
     <section class="section">
       <div class="section-head">
