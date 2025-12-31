@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ashwin Shankar — Resume & Projects</title>
   <meta name="description" content="Resume, experience, and projects portfolio." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -26,7 +27,6 @@
           <span class="dot">•</span>
           <a href="https://github.com/shanks005" target="_blank" rel="noreferrer">GitHub</a>
           <span class="dot">•</span>
-          <!-- TODO: replace with your real LinkedIn -->
           <a href="https://www.linkedin.com/in/ashwin-shankar-8b3878246/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 
@@ -42,7 +42,7 @@
         <div class="card info-card">
           <h2 class="card-title">Quick Summary</h2>
           <p class="muted">
-            I work across power systems, embedded systems, and controls—building,working on simulation of practical projects
+            I work across power systems, embedded systems, and controls—building and working on simulation of practical projects
             (EV systems, converters, motor control) and research prototypes (FOC, thrust estimation, dataset synthesis).
           </p>
           <div class="chips">
@@ -74,9 +74,12 @@
         </p>
 
         <p>
-        Currently,Im exploring scope of AI in power electronics.Some of my notable projects is an <b>EV charging system</b> with closed-loop control implementation, and on <b>Phantom</b>—a research
-        project under <a href=https://openhorizonrobotics.com/" target="_blank" rel="noreferrer">Open Horizon Robotics</a> focusing on soft sensing solutions in aerospace applications,as well as implementation
-        of a microgrid in grid connected mode and standalone mode
+          Currently, I’m exploring the scope of AI in power electronics. Some of my notable projects include an
+          <b>EV charging system</b> with closed-loop control implementation, and <b>Phantom</b>—a research
+          project under
+          <a href="https://openhorizonrobotics.com/" target="_blank" rel="noreferrer">Open Horizon Robotics</a>
+          focusing on soft sensing solutions in aerospace applications, as well as implementation of a microgrid
+          in grid-connected and standalone modes.
         </p>
 
         <p class="muted" style="margin-bottom:0;">
@@ -92,6 +95,7 @@
         <p class="muted">Selected engineering projects with links and summaries.</p>
       </div>
 
+      <!-- BSPD -->
       <article class="card">
         <div class="card-head">
           <h3>
@@ -111,6 +115,7 @@
         </ul>
       </article>
 
+      <!-- DC Motor -->
       <article class="card">
         <div class="card-head">
           <h3>
@@ -133,6 +138,7 @@
         </ul>
       </article>
 
+      <!-- Automated Fan & Light -->
       <article class="card">
         <div class="card-head">
           <h3>
@@ -148,31 +154,36 @@
         </div>
         <ul>
           <li>Group project: automated fan and lighting system based on room occupancy.</li>
-          <li>Used an IR sensor to detect occupants and send data to an 8051 microcontroller.</li>
-          <li>Wrote assembly code; designed and simulated using Proteus Design Suite.</li>
+          <li>Used an IR sensor to detect occupants and sends data to 8051 Microcontroller.</li>
+          <li>Wrote Assembly Code for the project; designed and simulated using Proteus Design Suite.</li>
         </ul>
       </article>
 
+      <!-- EV CHARGING (FIXED BADGES) -->
       <article class="card">
         <div class="card-head">
           <h3>Design of an EV Charging System</h3>
           <div class="meta">Jun 2025 – Present</div>
         </div>
+
         <div class="role">Research project under Dr. Anjan Padmasali</div>
+
+        <div class="badges">
+          <span class="badge">MATLAB/Simulink</span>
+          <span class="badge">PFC Boost</span>
+          <span class="badge">CC/CV Control</span>
+          <span class="badge">Battery Management</span>
+        </div>
+
         <ul>
           <li>Designing an EV charging system with voltage/current control and power factor correction.</li>
           <li>Implemented closed-loop control of a boost converter.</li>
           <li>Developing an algorithm to switch between Constant Current (CC) and Constant Voltage (CV) modes based on battery State of Charge (SoC).</li>
-          <li>Working on Active and Passive Cell Balancing Methods for Protection of the Battery System.</li>
+          <li>Working on active and passive cell balancing methods for protection of the battery system.</li>
         </ul>
-        <div class="badges">
-        <span class="badge">MATLAB/Simulink</span>
-        <span class="badge">Control System Design</span>
-        <span class="badge">Converter Modelling and Analysis</span>
-      </div>
-  </div>
       </article>
 
+      <!-- PHANTOM (ADDED BADGES) -->
       <article class="card">
         <div class="card-head">
           <h3>
@@ -180,10 +191,20 @@
           </h3>
           <div class="meta">Jan 2025 – Present</div>
         </div>
+
         <div class="role">
           Research Project under
           <a href="https://openhorizonrobotics.com/projects/" target="_blank" rel="noreferrer">Open Horizon Robotics</a>
         </div>
+
+        <div class="badges">
+          <span class="badge">FOC</span>
+          <span class="badge">IPMSM</span>
+          <span class="badge">Propeller/Thrust Model</span>
+          <span class="badge">Dataset Synthesis</span>
+          <span class="badge">Fault/PD Testing</span>
+        </div>
+
         <ul>
           <li>Research on soft sensing for aerospace/aviation systems, with an attempt to transfer power from a faulty to a healthy motor in pre-fault conditions.</li>
           <li>Built a simplified electrical model of NASA’s X-57 aircraft using an IPMSM and FOC for current and speed control.</li>
@@ -193,40 +214,40 @@
         </ul>
       </article>
 
+      <!-- MICROGRID -->
       <article class="card">
-  <div class="card-head">
-    <h3>Island Microgrid Ecosystem</h3>
-    <div class="badges">
-      <span class="badge">MATLAB/Simulink</span>
-      <span class="badge">Grid + Island Mode</span>
-      <span class="badge">SVPWM</span>
-      <span class="badge">PLL</span>
-    </div>
-  </div>
+        <div class="card-head">
+          <h3>Island Microgrid Ecosystem</h3>
+          <div class="badges">
+            <span class="badge">MATLAB/Simulink</span>
+            <span class="badge">Grid + Island Mode</span>
+            <span class="badge">SVPWM</span>
+            <span class="badge">PLL</span>
+          </div>
+        </div>
 
-  <ul>
-    <li>
-      Built a hybrid microgrid simulation integrating <b>24 kW Solar PV</b>, <b>10–20 kW wind</b>, and a
-      <b>200 V, 100 Ah battery</b> feeding a <b>600 V DC bus</b> with a <b>15 Ω DC load</b>.
-    </li>
-    <li>
-      Implemented a <b>35 kVA, 415 V (L-L), 50 Hz</b> inverter stage using <b>SVPWM</b> and designed a
-      <b>single L-filter</b> (≈ <b>407 µH</b>) based on rated current and switching ripple constraints.
-    </li>
-    <li>
-      Developed control logic for <b>grid-connected</b> and <b>islanded</b> operation:
-      <b>voltage synchronization (PLL)</b> for grid mode and <b>voltage + current synchronization/limiting</b>
-      for island mode to maintain stable operation under load changes.
-    </li>
-    <li>
-      Observed and documented key challenges such as <b>DC bus overshoot</b> and <b>low grid current</b>;
-      tuning multiple PID loops was constrained due to the model being <b>computationally memory-intensive</b>.
-    </li>
-  </ul>
-</article>
+        <ul>
+          <li>
+            Built a hybrid microgrid simulation integrating <b>24 kW Solar PV</b>, <b>10–20 kW wind</b>, and a
+            <b>200 V, 100 Ah battery</b> feeding a <b>600 V DC bus</b> with a <b>15 Ω DC load</b>.
+          </li>
+          <li>
+            Implemented a <b>35 kVA, 415 V (L-L), 50 Hz</b> inverter stage using <b>SVPWM</b> and designed a
+            <b>single L-filter</b> (≈ <b>407 µH</b>) based on rated current and switching ripple constraints.
+          </li>
+          <li>
+            Developed control logic for <b>grid-connected</b> and <b>islanded</b> operation:
+            <b>voltage synchronization (PLL)</b> for grid mode and <b>voltage + current synchronization/limiting</b>
+            for island mode to maintain stable operation under load changes.
+          </li>
+          <li>
+            Observed and documented key challenges such as <b>DC bus overshoot</b> and <b>low grid current</b>;
+            tuning multiple PID loops was constrained due to the model being <b>computationally memory-intensive</b>.
+          </li>
+        </ul>
+      </article>
 
     </section>
-      
 
     <section class="section">
       <div class="section-head">
