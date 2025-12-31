@@ -23,20 +23,18 @@ html{ scroll-behavior:smooth; }
 body{
   margin:0;
   color:var(--text);
-  /* "gamer fonts": headers use Press Start, body uses VT323 */
-  font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 20px;
-  line-height: 1.55;
+  font-family: "VT323", monospace;
 
-  /* Animated cyber background */
-  background:
-    radial-gradient(800px 600px at 10% 10%, rgba(255,61,242,0.20), transparent 60%),
-    radial-gradient(900px 600px at 90% 20%, rgba(0,245,255,0.18), transparent 55%),
-    radial-gradient(700px 600px at 70% 90%, rgba(166,255,0,0.10), transparent 60%),
-    linear-gradient(135deg, var(--bg0), var(--bg1));
-  overflow-x:hidden;
-  position: relative;
+  background-image:
+    linear-gradient(rgba(7,8,18,0.75), rgba(7,8,18,0.75)), /* dark overlay for readability */
+    url("assets/neon_background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* nice parallax feel */
 }
+
 
 /* Pixel grid overlay */
 body::before{
