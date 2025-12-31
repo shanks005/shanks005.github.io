@@ -23,51 +23,29 @@ html{ scroll-behavior:smooth; }
 body{
   margin:0;
   color:var(--text);
-  font-family: "VT323", monospace;
-
-  background-image:
-    linear-gradient(rgba(7,8,18,0.75), rgba(7,8,18,0.75)), /* dark overlay for readability */
-    url("assets/neon_background.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* nice parallax feel */
+  background: #070812;
+  position: relative;
+  overflow-x:hidden;
 }
 
-
-/* Pixel grid overlay */
 body::before{
   content:"";
   position: fixed;
   inset: 0;
-  pointer-events:none;
-  opacity: 0.22;
-  background:
-    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
-  background-size: 26px 26px; /* grid size */
-  mix-blend-mode: overlay;
-  filter: blur(0.2px);
-  z-index: 0;
+  z-index: -2;
+  background: url("assets/bg-neon.jpg") center/cover no-repeat;
+  filter: blur(10px) saturate(1.3) contrast(1.1);
+  transform: scale(1.05); /* prevents blur edges */
 }
 
-/* Scanline overlay (subtle) */
 body::after{
   content:"";
   position: fixed;
   inset: 0;
-  pointer-events:none;
-  opacity: 0.09;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.25),
-    rgba(0,0,0,0.25) 1px,
-    transparent 2px,
-    transparent 6px
-  );
-  z-index: 0;
+  z-index: -1;
+  background: linear-gradient(rgba(7,8,18,0.72), rgba(7,8,18,0.72));
 }
+
 
 a{
   color: var(--neon1);
